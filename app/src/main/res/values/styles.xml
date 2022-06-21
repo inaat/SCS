@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="Widget.Theme.SCS.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+
+    </style>
+    <style name="CustomCardView" parent="CardView">
+    <item name="cardCornerRadius">0dp</item>
+    <item name="android:layout_marginTop">@dimen/card_start</item>
+    <item name="android:layout_marginBottom">@dimen/card_bottom</item>
+    <item name="android:layout_marginStart">@dimen/card_start</item>
+    <item name="android:layout_marginEnd">@dimen/card_end</item>
+    <item name="android:elevation">4dp</item>
+    <item name="android:clipToPadding">true</item>
+    <item name="cardPreventCornerOverlap">true</item>
+    <item name="cardBackgroundColor">@color/white</item>
+
+</style>
+</resources>
