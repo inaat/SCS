@@ -2,13 +2,20 @@ package com.scs.edu.pk.scs.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.DisplayMetrics;
 import android.util.Log;
+
+import com.google.gson.Gson;
+import com.scs.edu.pk.scs.model.Login;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Utils {
 
@@ -16,7 +23,9 @@ public class Utils {
     public static Context appContext;
     private static String PREFERENCE="ExplainerSchool";
 
-
+    public static SharedPreferences myPrefs;
+    public static SharedPreferences.Editor prefsEditor;
+    public static Utils myObj;
     public boolean isNetworkAvailable(Context context) {
 
         boolean isConnected = false;
@@ -66,6 +75,12 @@ public class Utils {
         SharedPreferences.Editor editor = settings.edit();
         // editor.clear();
         editor.putString(name, value);
+        editor.commit();
+    }
+    public static void clearPreference(Context context) {
+        SharedPreferences settings = context.getSharedPreferences(PREFERENCE, 0);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.clear();
         editor.commit();
     }
     public static boolean getSharedPreferencesBoolean(Context context, String name) {
@@ -225,5 +240,27 @@ public class Utils {
 
     private static byte charToByte(char c) {
         return (byte) "0123456789ABCDEF".indexOf(c);
+    }
+    public static void setLocale(Context context, String localeName) {
+
+        if(localeName.isEmpty() || localeName.equals("null")) {
+            localeName = "en";
+            Log.e("localName status", "empty");
+        }
+        Locale myLocale = new Locale(localeName);
+        Locale.setDefault(myLocale);
+        Resources res = context.getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Log.e("Utility Status", "Locale updated!");
+    }
+    public void setUser(String key,Login response) {
+        prefsEditor = myPrefs.edit();
+        Gson gson = new Gson();
+        String json = gson.toJson(response);
+        prefsEditor.putString(key, json);
+        prefsEditor.commit();
     }
 }

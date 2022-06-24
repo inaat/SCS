@@ -20,6 +20,7 @@ import com.scs.edu.pk.scs.R;
 import com.scs.edu.pk.scs.model.Login;
 import com.scs.edu.pk.scs.networking.ApiClient;
 import com.scs.edu.pk.scs.networking.ApiInterface;
+import com.scs.edu.pk.scs.teacher.HomeActivity;
 import com.scs.edu.pk.scs.utils.BaseActivity;
 import com.scs.edu.pk.scs.utils.Utils;
 
@@ -32,6 +33,7 @@ import retrofit2.Response;
 
 public class LoginActivity extends BaseActivity {
     private Activity context;
+    String STUDENT_DATA = "student_data";
 
     EditText etxtEmail, etxtPassword;
     TextView txtLogin;
@@ -100,9 +102,16 @@ public class LoginActivity extends BaseActivity {
 
                 if (response.body() != null && response.isSuccessful()) {
                     String value = response.body().getToken();
-                    Utils.setSharedPreferenceBoolean(getApplicationContext(), "IsLoggingIn", true);
-                    Utils.setSharedPreference(getApplicationContext(), Constant.Token,value);
-                    Intent asd = new Intent(getApplicationContext(),MainActivity.class);
+                    String fullName = response.body().getFullName();
+                    String email =response.body().getUserEmail();
+                    String image =response.body().getUserImage();
+                    Utils.setSharedPreferenceBoolean(getApplicationContext(),Constant.CHECK_Login, true);
+                    Utils.setSharedPreference(getApplicationContext(), Constant.AUTH_TOKEN,value);
+                    Utils.setSharedPreference(getApplicationContext(), Constant.userName,fullName);
+                    Utils.setSharedPreference(getApplicationContext(), Constant.userEmail,email);
+                    Utils.setSharedPreference(getApplicationContext(), Constant.userImage,image);
+
+                    Intent asd = new Intent(getApplicationContext(), HomeActivity.class);
                     startActivity(asd);
                     finish();
                 } else {

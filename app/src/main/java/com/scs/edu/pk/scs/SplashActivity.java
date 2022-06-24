@@ -61,20 +61,10 @@ public class SplashActivity extends AppCompatActivity {
 
         new Handler().postDelayed(new Runnable() {
             public void run() {
-                Boolean isLoggegIn;
-                Boolean isUrlTaken;
-
-                try {
-                    isLoggegIn = Utils.getSharedPreferencesBoolean(getApplicationContext(), Constant.IsLoggingIn);
-                } catch (NullPointerException NPE) {
-                    isLoggegIn = false;
-                }
-
-                Log.e("loggeg", isLoggegIn.toString());
 
 
 
-                    if(isLoggegIn){
+                    if(Utils.getSharedPreferencesBoolean(getApplicationContext(), Constant.CHECK_Login)==true){
                         Intent i = new Intent(getApplicationContext(), HomeActivity.class);
                         startActivity(i);
                         finish();

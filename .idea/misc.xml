@@ -4,10 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/SCS/app/src/main/res/drawable/badge_background.xml" value="0.1" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/banner_background.xml" value="0.142" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/blue_background.xml" value="0.142" />
         <entry key="..\:/SCS/app/src/main/res/drawable/bottom_navigation_background.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/button_style_accent.xml" value="0.1" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/card_top_lef_corner.xml" value="0.142" />
         <entry key="..\:/SCS/app/src/main/res/drawable/drawer_selector.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/gradiant.xml" value="0.2095" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/green_background.xml" value="0.142" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/home_foreground_card.xml" value="0.1505" />
         <entry key="..\:/SCS/app/src/main/res/drawable/ic_access_time_black_24dp.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/ic_add_alert.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/ic_add_black.xml" value="0.1" />
@@ -35,7 +40,11 @@
         <entry key="..\:/SCS/app/src/main/res/drawable/rounded_square.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/style_button.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/drawable/style_button_background.xml" value="0.1" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/upper_box_white_40.xml" value="0.142" />
+        <entry key="..\:/SCS/app/src/main/res/drawable/white_background.xml" value="0.142" />
         <entry key="..\:/SCS/app/src/main/res/drawable/yellow_border.xml" value="0.1" />
+        <entry key="..\:/SCS/app/src/main/res/font/bangers.xml" value="0.234375" />
+        <entry key="..\:/SCS/app/src/main/res/font/bebas_neue.xml" value="0.25" />
         <entry key="..\:/SCS/app/src/main/res/layout/1activity_login.xml" value="0.14266304347826086" />
         <entry key="..\:/SCS/app/src/main/res/layout/activity_employee_dashboard.xml" value="0.33" />
         <entry key="..\:/SCS/app/src/main/res/layout/activity_home.xml" value="0.1" />
@@ -44,7 +53,7 @@
         <entry key="..\:/SCS/app/src/main/res/layout/activity_splash.xml" value="0.17074275362318841" />
         <entry key="..\:/SCS/app/src/main/res/layout/base_activity_drawer.xml" value="0.19010416666666666" />
         <entry key="..\:/SCS/app/src/main/res/layout/drawer_header.xml" value="0.1526268115942029" />
-        <entry key="..\:/SCS/app/src/main/res/layout/fragment_home.xml" value="0.17074275362318841" />
+        <entry key="..\:/SCS/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/SCS/app/src/main/res/layout/fragment_student_dashboard.xml" value="0.67" />
         <entry key="..\:/SCS/app/src/main/res/layout/fragment_student_dashboard_list.xml" value="0.1331521739130435" />
         <entry key="..\:/SCS/app/src/main/res/layout/nav_footer.xml" value="0.1" />
