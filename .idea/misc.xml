@@ -51,9 +51,10 @@
         <entry key="..\:/SCS/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/SCS/app/src/main/res/layout/activity_splash.xml" value="0.17074275362318841" />
+        <entry key="..\:/SCS/app/src/main/res/layout/activity_subject.xml" value="0.16259057971014493" />
         <entry key="..\:/SCS/app/src/main/res/layout/base_activity_drawer.xml" value="0.19010416666666666" />
         <entry key="..\:/SCS/app/src/main/res/layout/drawer_header.xml" value="0.1526268115942029" />
-        <entry key="..\:/SCS/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/SCS/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/SCS/app/src/main/res/layout/fragment_student_dashboard.xml" value="0.67" />
         <entry key="..\:/SCS/app/src/main/res/layout/fragment_student_dashboard_list.xml" value="0.1331521739130435" />
         <entry key="..\:/SCS/app/src/main/res/layout/nav_footer.xml" value="0.1" />

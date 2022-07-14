@@ -20,6 +20,9 @@
         android:theme="@style/Theme.SCS"
         tools:targetApi="31">
         <activity
+            android:name=".teacher.SubjectActivity"
+            android:exported="false" />
+        <activity
             android:name=".teacher.HomeActivity"
             android:exported="false" />
         <activity
